@@ -5,3 +5,5 @@ def my_string
 end
 
 puts my_string
+
+# returns "Hello Ruby World" because it is a local varialble, which I think takes precedence over a method.  

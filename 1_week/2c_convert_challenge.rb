@@ -7,13 +7,15 @@ desired_scale = gets.chomp.downcase
 
 case source_scale
 when 'f'
-  kelvin = ((temp -32) / 1.8) + 273.15
+  kelvin = ((temp - 32) / 1.8) + 273.15
 when 'c'
   kelvin = temp + 273.15
 when 'k'
   kelvin = temp
 when 'r'
   kelvin = ((temp - 491.67) / 1.8) + 273.15
+else
+  puts 'F, C, K, or R only please'
 end
 
 case desired_scale
