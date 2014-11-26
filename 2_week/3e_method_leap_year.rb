@@ -4,7 +4,7 @@ end
 
 puts 'Enter a year:'
 user_year = gets.to_i
-leap_year?(user_year) ? minutes = 527040 : minutes = 525600
+minutes = leap_year?(user_year) ? 527040 : 525600
 
 puts "Leap Year: #{leap_year?(user_year)} "
 puts "#{minutes} minutes in this year"
