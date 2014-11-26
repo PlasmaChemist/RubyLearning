@@ -1,17 +1,10 @@
 def leap_year?(year)
-
-case
-  when year % 400 == 0 then true
-  @minutes = 527040
-  when year % 100 == 0 then false
-  @minutes = 525600
-  else year % 4 == 0
-  @minutes = 525600
-  end
+  year % 400 == 0 || (year % 4 == 0) && (year % 100 != 0)
 end
 
 puts 'Enter a year:'
 user_year = gets.to_i
-leap_year?(user_year)
+leap_year?(user_year) ? minutes = 527040 : minutes = 525600
 
-puts "There are #{@minutes} minutes in #{user_year}."
+puts "Leap Year: #{leap_year?(user_year)} "
+puts "#{minutes} minutes in this year"
